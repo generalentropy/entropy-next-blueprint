@@ -1,9 +1,19 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import ThemeToggle from "./ThemeToggle";
+import { Github } from "lucide-react";
+import { useEffect } from "react";
+import { toast } from "sonner";
 
 export default function Hero() {
+  useEffect(() => {
+    const id = setTimeout(() => toast.success("Sonner is ready to use 🎉"), 0);
+    return () => clearTimeout(id);
+  }, []);
+
   return (
     <section className="flex flex-col items-center justify-center gap-8 text-center">
       <h1 className="flex flex-col gap-3 text-4xl font-bold tracking-tight">
@@ -34,6 +44,7 @@ export default function Hero() {
         <Badge className="rounded-full border px-3 py-1">Zustand</Badge>
         <Badge className="rounded-full border px-3 py-1">Lucide Icons</Badge>
         <Badge className="rounded-full border px-3 py-1">next-themes</Badge>
+        <Badge className="rounded-full border px-3 py-1">Motion</Badge>
       </ul>
 
       {/* Cool features */}
@@ -42,6 +53,7 @@ export default function Hero() {
         <ul className="text-muted-foreground space-y-1">
           <li>Automatic class sorting with Prettier plugin</li>
           <li>Pre-configured ESLint & strict TypeScript</li>
+          <p>Pre-installed react Query eslint + Devtool </p>
           <li>Ready-to-use shadcn/ui components</li>
           <li>Zustand boilerplate store with persistence</li>
           <li>Prebuilt theme switcher component</li>
@@ -73,12 +85,9 @@ export default function Hero() {
       </div>
 
       <div className="mt-8 flex gap-4">
-        <Button asChild>
-          <Link href="/docs">Get Started</Link>
-        </Button>
         <Button asChild variant="outline">
-          <Link href="https://github.com/your-username/entropy-next-blueprint">
-            GitHub
+          <Link href="https://github.com/generalentropy/entropy-next-blueprint">
+            <Github /> GitHub
           </Link>
         </Button>
       </div>

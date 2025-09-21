@@ -22,6 +22,7 @@ A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Quer
 - **Zustand**
 - **Lucide Icons**
 - **next-themes**
+- **Motion/react**
 
 ---
 
@@ -32,6 +33,7 @@ A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Quer
 - 🎨 Ready-to-use shadcn/ui components
 - 🗂 Zustand boilerplate store with persistence
 - 🌗 Prebuilt theme switcher component
+- 📊 Pre-installed React Query + Devtools + ESLint plugin
 
 ---
 
@@ -51,8 +53,6 @@ pnpm prisma generate
 pnpm dev
 ```
 
-```
-
 ✅ All set, you’re ready to code 🚀
 
 ---
@@ -60,5 +60,3 @@ pnpm dev
 ## 📖 Documentation
 
 - [GitHub Repository](https://github.com/generalentropy/entropy-next-blueprint)
-
-```
