@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import { sleep } from "@/utils";
 
 export default function Home() {
   return (

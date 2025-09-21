@@ -34,6 +34,8 @@ A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Quer
 - 🗂 Zustand boilerplate store with persistence
 - 🌗 Prebuilt theme switcher component
 - 📊 Pre-installed React Query + Devtools + ESLint plugin
+- 🛠 Basic utilities (fetcher, date formatter, sleep, etc.)
+- 🧩 Extra hooks with `usehooks-ts`
 
 ---
 

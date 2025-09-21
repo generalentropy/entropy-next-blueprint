@@ -45,6 +45,7 @@ export default function Hero() {
         <Badge className="rounded-full border px-3 py-1">Lucide Icons</Badge>
         <Badge className="rounded-full border px-3 py-1">next-themes</Badge>
         <Badge className="rounded-full border px-3 py-1">Motion</Badge>
+        <Badge className="rounded-full border px-3 py-1">Slugify</Badge>
       </ul>
 
       {/* Cool features */}
@@ -57,6 +58,13 @@ export default function Hero() {
           <li>Ready-to-use shadcn/ui components</li>
           <li>Zustand boilerplate store with persistence</li>
           <li>Prebuilt theme switcher component</li>
+          <li>Basic utilities</li>
+          <li>
+            Extra hooks with{" "}
+            <a href="https://github.com/juliencrn/usehooks-ts">
+              <code>usehooks-ts</code>
+            </a>
+          </li>
         </ul>
       </div>
       {/* Quick start */}
