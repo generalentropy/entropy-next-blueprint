@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Entropy Next Blueprint
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)  
+[![React](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)  
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)  
+[![pnpm](https://img.shields.io/badge/pnpm-%23f69220?logo=pnpm&logoColor=white)](https://pnpm.io/)  
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
-First, run the development server:
+🚀 Kickstart your **Next.js 15** project in minutes.  
+A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Query, and more**.
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js 15**
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS 4**
+- **shadcn/ui**
+- **Prisma**
+- **React Query**
+- **Zod**
+- **ESLint & Prettier**
+- **Zustand**
+- **Lucide Icons**
+- **next-themes**
+
+---
+
+## ✨ Cool Features Included
+
+- 🔀 Automatic Tailwind class sorting with Prettier plugin
+- ✅ Pre-configured ESLint & strict TypeScript
+- 🎨 Ready-to-use shadcn/ui components
+- 🗂 Zustand boilerplate store with persistence
+- 🌗 Prebuilt theme switcher component
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# (Optional) Initialize Prisma
+pnpm prisma init
+
+# Generate the Prisma client
+pnpm prisma generate
+
+# Start the development server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ All set, you’re ready to code 🚀
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📖 Documentation
 
-To learn more about Next.js, take a look at the following resources:
+- [GitHub Repository](https://github.com/generalentropy/entropy-next-blueprint)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```

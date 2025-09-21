@@ -44,20 +44,32 @@ export default function Hero() {
           <li>Pre-configured ESLint & strict TypeScript</li>
           <li>Ready-to-use shadcn/ui components</li>
           <li>Zustand boilerplate store with persistence</li>
+          <li>Prebuilt theme switcher component</li>
         </ul>
       </div>
-
       {/* Quick start */}
       <div className="mt-4 space-y-2 text-sm">
         <p>
-          👉 Just run :{" "}
+          👉 Install dependencies:{" "}
           <code className="bg-muted rounded px-2 py-0.5">pnpm install</code>
         </p>
         <p>
-          👉 Then :{" "}
+          👉 (Optional) Initialize Prisma:{" "}
+          <code className="bg-muted rounded px-2 py-0.5">pnpm prisma init</code>
+        </p>
+        <p>
+          👉 Generate the Prisma client:{" "}
+          <code className="bg-muted rounded px-2 py-0.5">
+            pnpm prisma generate
+          </code>
+        </p>
+        <p>
+          👉 Start the dev server:{" "}
           <code className="bg-muted rounded px-2 py-0.5">pnpm dev</code>
         </p>
-        <p className="mt-3 text-lg font-semibold">All done, ready to code 🚀</p>
+        <p className="mt-3 text-lg font-semibold">
+          ✅ All set, you’re ready to code 🚀
+        </p>
       </div>
 
       <div className="mt-8 flex gap-4">
