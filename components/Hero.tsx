@@ -1,19 +1,12 @@
-"use client";
-
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import ThemeToggle from "./ThemeToggle";
 import { Github } from "lucide-react";
-import { useEffect } from "react";
-import { toast } from "sonner";
+import DemoToast from "./Test-toast";
+import TestAction from "./Test-action";
 
 export default function Hero() {
-  useEffect(() => {
-    const id = setTimeout(() => toast.success("Sonner is ready to use 🎉"), 0);
-    return () => clearTimeout(id);
-  }, []);
-
   return (
     <section className="flex flex-col items-center justify-center gap-8 text-center">
       <h1 className="flex flex-col gap-3 text-4xl font-bold tracking-tight">
@@ -67,7 +60,7 @@ export default function Hero() {
       </div>
 
       <div className="flex justify-center">
-        <Button asChild size="lg" className="bg-violet-600 hover:bg-violet-500">
+        <Button asChild size="lg">
           <Link
             href="https://github.com/generalentropy/entropy-next-blueprint"
             target="_blank"
@@ -105,6 +98,11 @@ export default function Hero() {
 
       <div className="mt-6">
         <ThemeToggle />
+      </div>
+
+      <div className="flex gap-4">
+        <TestAction />
+        <DemoToast />
       </div>
     </section>
   );
