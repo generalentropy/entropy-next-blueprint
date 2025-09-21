@@ -29,7 +29,6 @@ export default function Hero() {
         Prisma, React Query, and more.
       </p>
 
-      {/* Tech stack badges */}
       <ul className="text-muted-foreground flex max-w-xl flex-wrap justify-center gap-2 text-sm">
         <Badge className="rounded-full border px-3 py-1">Next.js 15</Badge>
         <Badge className="rounded-full border px-3 py-1">React 19</Badge>
@@ -48,7 +47,6 @@ export default function Hero() {
         <Badge className="rounded-full border px-3 py-1">Slugify</Badge>
       </ul>
 
-      {/* Cool features */}
       <div className="mt-6 flex flex-col items-center gap-3">
         <p className="text-lg font-semibold">✨ Cool Features Included</p>
         <ul className="text-muted-foreground space-y-1">
@@ -67,8 +65,21 @@ export default function Hero() {
           </li>
         </ul>
       </div>
-      {/* Quick start */}
-      <div className="mt-4 space-y-2 text-sm">
+
+      <div className="flex justify-center">
+        <Button asChild size="lg" className="bg-violet-600 hover:bg-violet-500">
+          <Link
+            href="https://github.com/generalentropy/entropy-next-blueprint"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className="mr-1 h-5 w-5" />
+            Use this template
+          </Link>
+        </Button>
+      </div>
+
+      <div className="space-y-2 text-sm">
         <p>
           👉 Install dependencies:{" "}
           <code className="bg-muted rounded px-2 py-0.5">pnpm install</code>
@@ -78,7 +89,7 @@ export default function Hero() {
           <code className="bg-muted rounded px-2 py-0.5">pnpm prisma init</code>
         </p>
         <p>
-          👉 Generate the Prisma client:{" "}
+          👉 (Optional) Generate the Prisma client:{" "}
           <code className="bg-muted rounded px-2 py-0.5">
             pnpm prisma generate
           </code>
@@ -90,14 +101,6 @@ export default function Hero() {
         <p className="mt-3 text-lg font-semibold">
           ✅ All set, you’re ready to code 🚀
         </p>
-      </div>
-
-      <div className="mt-8 flex gap-4">
-        <Button asChild variant="outline">
-          <Link href="https://github.com/generalentropy/entropy-next-blueprint">
-            <Github /> GitHub
-          </Link>
-        </Button>
       </div>
 
       <div className="mt-6">
