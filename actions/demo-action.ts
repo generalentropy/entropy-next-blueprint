@@ -1,8 +1,10 @@
 "use server";
 
+import { sleep } from "@/utils";
+
 export async function testServerAction() {
   // Simulate some work
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await sleep(200);
 
   return {
     success: true,
