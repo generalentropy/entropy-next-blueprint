@@ -6,11 +6,30 @@ import { Github } from "lucide-react";
 import DemoToast from "./Test-toast";
 import TestAction from "./Test-action";
 
+const techStack = [
+  "Next.js 15",
+  "React 19",
+  "TypeScript",
+  "Tailwind 4",
+  "shadcn/ui",
+  "Prisma",
+  "React Query",
+  "Zod",
+  "ESLint",
+  "Prettier",
+  "Zustand",
+  "Lucide Icons",
+  "next-themes",
+  "Motion",
+  "Slugify",
+];
+
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center gap-8 text-center">
-      <h1 className="flex flex-col gap-3 text-4xl font-bold tracking-tight">
-        <span>Welcome to Entropy-Next-Blueprint</span>
+    <section className="flex flex-col items-center justify-center gap-4 text-center md:gap-8">
+      <ThemeToggle />
+      <h1 className="flex flex-col gap-3 text-4xl font-black tracking-tight">
+        <span>Welcome to Entropy Next Blueprint</span>
       </h1>
 
       <p className="text-xl font-bold">
@@ -22,25 +41,9 @@ export default function Hero() {
         Prisma, React Query, and more.
       </p>
 
-      <ul className="text-muted-foreground flex max-w-xl flex-wrap justify-center gap-2 text-sm">
-        <Badge className="rounded-full border px-3 py-1">Next.js 15</Badge>
-        <Badge className="rounded-full border px-3 py-1">React 19</Badge>
-        <Badge className="rounded-full border px-3 py-1">TypeScript</Badge>
-        <Badge className="rounded-full border px-3 py-1">Tailwind 4</Badge>
-        <Badge className="rounded-full border px-3 py-1">shadcn/ui</Badge>
-        <Badge className="rounded-full border px-3 py-1">Prisma</Badge>
-        <Badge className="rounded-full border px-3 py-1">React Query</Badge>
-        <Badge className="rounded-full border px-3 py-1">Zod</Badge>
-        <Badge className="rounded-full border px-3 py-1">ESLint</Badge>
-        <Badge className="rounded-full border px-3 py-1">Prettier</Badge>
-        <Badge className="rounded-full border px-3 py-1">Zustand</Badge>
-        <Badge className="rounded-full border px-3 py-1">Lucide Icons</Badge>
-        <Badge className="rounded-full border px-3 py-1">next-themes</Badge>
-        <Badge className="rounded-full border px-3 py-1">Motion</Badge>
-        <Badge className="rounded-full border px-3 py-1">Slugify</Badge>
-      </ul>
+      <TechBadges />
 
-      <div className="mt-6 flex flex-col items-center gap-3">
+      <div className="mt-3 flex flex-col items-center gap-3 md:mt-6">
         <p className="text-lg font-semibold">✨ Cool Features Included</p>
         <ul className="text-muted-foreground space-y-1">
           <li>Automatic class sorting with Prettier plugin</li>
@@ -59,7 +62,7 @@ export default function Hero() {
         </ul>
       </div>
 
-      <div className="flex justify-center">
+      <div className="my-3 flex justify-center">
         <Button asChild size="lg">
           <Link
             href="https://github.com/generalentropy/entropy-next-blueprint"
@@ -96,14 +99,22 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="mt-6">
-        <ThemeToggle />
-      </div>
-
       <div className="flex gap-4">
         <TestAction />
         <DemoToast />
       </div>
     </section>
+  );
+}
+
+function TechBadges() {
+  return (
+    <ul className="text-muted-foreground flex max-w-xl flex-wrap justify-center gap-2 text-sm">
+      {techStack.map((tech) => (
+        <li key={tech}>
+          <Badge className="rounded-full border sm:px-3 md:py-1">{tech}</Badge>
+        </li>
+      ))}
+    </ul>
   );
 }
