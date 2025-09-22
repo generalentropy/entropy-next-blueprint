@@ -25,7 +25,7 @@ export default function TestAction() {
     <Button
       onClick={handleClick}
       disabled={loading}
-      className="min-w-40 cursor-pointer bg-purple-500 px-4 py-2 text-white hover:bg-purple-600 disabled:opacity-50"
+      className="min-w-40 cursor-pointer disabled:opacity-50"
     >
       {loading ? <LoaderIcon className="animate-spin" /> : "Test Server Action"}
     </Button>

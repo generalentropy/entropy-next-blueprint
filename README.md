@@ -36,6 +36,7 @@ A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Quer
 - 📊 Pre-installed React Query + Devtools + ESLint plugin
 - 🛠 Basic utilities (fetcher, date formatter, sleep, etc.)
 - 🧩 Extra hooks with `usehooks-ts`
+- 🚦 Middleware file included and ready for customization
 
 ---
 
