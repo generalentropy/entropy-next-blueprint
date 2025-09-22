@@ -27,6 +27,9 @@ export const useUIPreferences = create<UIPreferencesState>()(
     }),
     {
       name: "ui-prefs",
+      // `createJSONStorage` is a Zustand utility that adapts a raw storage
+      // (localStorage, sessionStorage, etc. → which only handle strings)
+      // into a JSON-ready storage: it automatically serializes/deserializes objects
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         sidebarOpen: state.sidebarOpen,
