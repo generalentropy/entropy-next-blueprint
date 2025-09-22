@@ -1,10 +1,10 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { isDev } from "./helpers/env";
+import { IS_DEV } from "./constants";
 
 export function middleware(request: NextRequest) {
   console.log("New request 🔥");
 
-  if (isDev()) {
+  if (IS_DEV) {
     return NextResponse.next();
   }
 }
