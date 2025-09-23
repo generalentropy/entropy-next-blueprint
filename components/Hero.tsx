@@ -29,7 +29,7 @@ export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 text-center md:gap-8">
       <ThemeToggle />
-      <h1 className="flex flex-col gap-3 text-4xl font-black tracking-tight">
+      <h1 className="flex flex-col gap-3 text-3xl font-black tracking-tight sm:text-4xl">
         <span>Welcome to Entropy Next Blueprint</span>
       </h1>
 
