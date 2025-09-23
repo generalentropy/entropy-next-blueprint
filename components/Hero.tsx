@@ -91,6 +91,17 @@ export default function Hero() {
 
       <div className="space-y-2 text-sm">
         <p>
+          👉 First, install{" "}
+          <Link
+            className="rounded-full bg-gray-100 px-1.5 py-0.5 font-semibold"
+            href="https://pnpm.io"
+          >
+            pnpm
+          </Link>{" "}
+          if not present
+        </p>
+
+        <p>
           👉 Install dependencies:{" "}
           <code className="bg-muted rounded px-2 py-0.5">pnpm install</code>
         </p>

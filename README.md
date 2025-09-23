@@ -42,6 +42,8 @@ A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Quer
 
 ## 🚀 Quick Start
 
+## Install [pnpm](https://pnpm.io/) (if not already installed)
+
 ### Install dependencies
 
 ```bash
