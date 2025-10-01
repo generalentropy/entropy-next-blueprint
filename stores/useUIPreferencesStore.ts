@@ -3,16 +3,16 @@ import { persist, createJSONStorage } from "zustand/middleware";
 
 type Density = "comfortable" | "compact";
 
-interface UIPreferencesState {
+type UIPreferencesState = {
   sidebarOpen: boolean;
   density: Density;
   reducedMotion: boolean;
   // setters
-  setSidebarOpen: (open: boolean) => void;
-  toggleSidebar: () => void;
-  setDensity: (d: Density) => void;
-  setReducedMotion: (v: boolean) => void;
-}
+  setSidebarOpen(open: boolean): void;
+  toggleSidebar(): void;
+  setDensity(d: Density): void;
+  setReducedMotion(v: boolean): void;
+};
 
 export const useUIPreferences = create<UIPreferencesState>()(
   persist(

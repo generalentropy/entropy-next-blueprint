@@ -1,10 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 
 // Define the type for the global object
-interface GlobalWithPrisma {
+type GlobalWithPrisma = {
   prisma?: PrismaClient;
-}
-
+};
 /**
  * The `global` variable is a global object in Node.js,
  * similar to `window` in the browser.
