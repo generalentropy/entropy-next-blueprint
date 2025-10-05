@@ -92,12 +92,9 @@ export default function Hero() {
       <div className="space-y-2 text-sm">
         <p>
           👉 First, install{" "}
-          <Link
-            className="rounded-full bg-gray-100 px-1.5 py-0.5 font-semibold"
-            href="https://pnpm.io"
-          >
-            pnpm
-          </Link>{" "}
+          <Badge asChild>
+            <Link href="https://pnpm.io">pnpm</Link>
+          </Badge>{" "}
           if not present
         </p>
 
