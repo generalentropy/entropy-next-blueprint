@@ -51,12 +51,27 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="my-3 flex justify-center">
+      <div className="my-3 flex flex-col justify-center gap-4 sm:flex-row">
         <Button
           asChild
           size="lg"
           variant="default"
-          className="bg-pink-400 shadow-md transition-colors hover:bg-pink-500"
+          className="bg-teal-600 shadow-md transition-colors hover:bg-teal-700 dark:bg-teal-300 dark:hover:bg-teal-100"
+        >
+          <Link
+            href="https://github.com/generalentropy/entropy-next-blueprint"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Create a new repository from the Entropy Next Blueprint template on GitHub"
+          >
+            <span>View on GitHub</span>
+          </Link>
+        </Button>
+        <Button
+          asChild
+          size="lg"
+          variant="default"
+          className="bg-purple-400 shadow-md transition-colors hover:bg-purple-500 dark:bg-pink-300 dark:hover:bg-pink-200"
         >
           <Link
             href="https://github.com/generalentropy/entropy-next-blueprint/generate"
@@ -64,7 +79,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             aria-label="Create a new repository from the Entropy Next Blueprint template on GitHub"
           >
-            <span>Use this template on GitHub</span>
+            <span>Use this template</span>
           </Link>
         </Button>
       </div>
