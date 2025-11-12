@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { IS_DEV } from "./constants";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   console.log("New request 🔥");
 
   if (IS_DEV) {
