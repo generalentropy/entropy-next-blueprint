@@ -8,7 +8,7 @@ import TestAction from "./Test-action";
 import { Separator } from "./ui/separator";
 
 const techStack = [
-  "Next.js 15",
+  "Next.js 16",
   "React 19",
   "TypeScript",
   "Tailwind 4",
@@ -38,8 +38,8 @@ export default function Hero() {
       </p>
 
       <p className="text-muted-foreground max-w-xl text-lg">
-        A modern starter for Next.js 15 - TypeScript, Tailwind 4, shadcn,
-        Prisma, React Query, and more.
+        A modern starter for Next.js 16, TypeScript, Tailwind 4, shadcn, Prisma,
+        React Query, and more.
       </p>
 
       <TechBadges />
