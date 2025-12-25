@@ -15,7 +15,7 @@ A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Quer
 - **TypeScript**
 - **Tailwind CSS 4**
 - **shadcn/ui**
-- **Prisma**
+- **Prisma (6)**
 - **React Query**
 - **Zod**
 - **ESLint & Prettier**
