@@ -15,7 +15,7 @@ A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Quer
 - **TypeScript**
 - **Tailwind CSS 4**
 - **shadcn/ui**
-- **Prisma (6)**
+- **Prisma (7)**
 - **React Query**
 - **Zod**
 - **ESLint & Prettier**
@@ -50,13 +50,13 @@ A modern starter powered by **TypeScript, Tailwind 4, shadcn, Prisma, React Quer
 pnpm install
 ```
 
-### (Optional) Initialize Prisma -> Delete the existing root prisma folder first
+### Configure environment variables
 
 ```bash
-pnpm prisma init
+cp .env.example .env
 ```
 
-### (Optional) Generate the Prisma client
+### Generate the Prisma client
 
 ```bash
 pnpm prisma generate
@@ -71,15 +71,6 @@ pnpm dev
 ✅ All set, you’re ready to code 🚀
 
 ---
-
-## ⚠️ Windows ARM Note
-
-If you are developing on **Windows ARM**, Prisma may fail with the default engine.  
-To fix this, add the following line to your `.env` file:
-
-```env
-PRISMA_CLIENT_ENGINE_TYPE=binary
-```
 
 ## 📖 Documentation
 

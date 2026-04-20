@@ -2,20 +2,12 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
-
-  /**
-   * ⚠️ Windows ARM users:
-   * If you are developing on Windows ARM,
-   * add the following to your .env file:
-   * PRISMA_CLIENT_ENGINE_TYPE=binary
-   * Reference: https://github.com/prisma/prisma/issues/25206
-   */
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 model Exemple {

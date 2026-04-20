@@ -13,7 +13,7 @@ const techStack = [
   "TypeScript",
   "Tailwind 4",
   "shadcn/ui",
-  "Prisma",
+  "Prisma 7",
   "React Query",
   "Zod",
   "ESLint",
@@ -38,8 +38,8 @@ export default function Hero() {
       </p>
 
       <p className="text-muted-foreground max-w-xl text-lg">
-        A modern starter for Next.js 16, TypeScript, Tailwind 4, shadcn, Prisma,
-        React Query, and more.
+        A modern starter for Next.js 16, TypeScript, Tailwind 4, shadcn, Prisma
+        7, React Query, and more.
       </p>
 
       <TechBadges />
