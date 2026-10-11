@@ -74,4 +74,6 @@ pnpm dev
 
 ## 📖 Documentation
 
+- [Project documentation](docs/README.md)
+- [Agent instructions](AGENTS.md) · [Claude instructions](CLAUDE.md)
 - [GitHub Repository](https://github.com/generalentropy/entropy-next-blueprint)
