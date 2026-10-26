@@ -11,3 +11,11 @@ onlyBuiltDependencies:
   - prisma
   - sharp
   - unrs-resolver
+overrides:
+  # Correctifs de sécurité que les paquets parents figent encore sur des
+  # versions vulnérables. Même version majeure à chaque fois.
+  baseline-browser-mapping: ^2.11.0
+  brace-expansion@5: ^5.0.12
+  browserslist: ^4.28.7
+  fast-uri: ^3.1.9
+  picomatch@4: ^4.0.4
